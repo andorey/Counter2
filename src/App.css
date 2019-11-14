@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -13,10 +9,79 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 600;
+  color: #282c34;
 }
 
-.App-link {
-  color: #09d3ac;
+.box {
+  height: 350px;
+  width: 400px;
+  border: 10px solid #09d3ac;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.display {
+  height: 200px;
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 7px solid #09d399;
+  background-color: #09d3ac;
+  font-size: 180px;
+  border-radius: 10px;
+}
+
+.display div {
+  margin-top: -10px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.button button:disabled {
+  background-color: slategray;
+  color: aquamarine;
+}
+
+.button button {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #09d3ac;
+  border-radius: 10px;
+}
+
+.boxButton {
+  margin: 0 auto;
+  height: 90px;
+  width: 355px;
+  margin-top:10px;
+  border: 5px solid #09d3ac;
+  border-radius: 10px;
+}
+
+.maxValueClass {
+  color: red;
+  font-size: 180px;
+  height: 200px;
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 7px solid #09d399;
+  background-color: #09d3ac;
+  text-align-all: center;
+  border-radius: 10px;
+}
+
+.maxValueClass div {
+  margin-top: -10px;
 }
