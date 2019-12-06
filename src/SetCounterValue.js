@@ -9,14 +9,18 @@ const SetCounterValue = (props) => {
 		return (
 				<div className="App-header">
 					<div className="box">
+						<div className="boxInput">
 						<form action="">
-							<input type="number" step="1"
+							<label>Start number</label>
+							<input type="number"
 								   value={props.state.startValue}
-							onChange={props.onChangeStart}/>
-							<input type="number" step="1"
+								   onChange={props.onChangeStart}/> <br/>
+							<label>End number</label>
+							<input type="number"
 								   value={props.state.maxValue}
-							onChange={props.onChangeMax}/>
+								   onChange={props.onChangeMax}/>
 						</form>
+						</div>
 						<div className="boxButton">
 							<div className="button">
 								<Buttons>

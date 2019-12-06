@@ -41,7 +41,6 @@ class App extends React.Component {
 	};
 
 	onChangeStart = (event) => {
-		console.log(event.currentTarget)
 		this.setState({startValue: Number(event.currentTarget.value)},
 		() => {this.changeValue()}
 		)
@@ -55,12 +54,12 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<AppBox state={this.state}
-						onClickUp={this.onClickUp}
-						onClickReset={this.onClickReset}/>
 				<SetCounterValue onChangeStart={this.onChangeStart}
 								 onChangeMax={this.onChangeMax}
 								 state={this.state}/>
+				<AppBox state={this.state}
+						onClickUp={this.onClickUp}
+						onClickReset={this.onClickReset}/>
 			</div>
 		)
 	}
