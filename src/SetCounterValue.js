@@ -12,11 +12,11 @@ const SetCounterValue = (props) => {
 						<div className="boxInput">
 						<form action="">
 							<label>Start number</label>
-							<input type="number"
+							<input type="number" min={0}
 								   value={props.state.startValue}
 								   onChange={props.onChangeStart}/> <br/>
 							<label>End number</label>
-							<input type="number"
+							<input type="number" min={0}
 								   value={props.state.maxValue}
 								   onChange={props.onChangeMax}/>
 						</form>
